@@ -29,4 +29,4 @@
 ![Добавление и редактирование курсов и тьюторов](static/img/AddingCources.gif)
 
 ### Интерактивная карта
-![Интерактивная карта](static/img/Map.gif)
+![Интерактивная карта](static/img/interactive_map.gif)
