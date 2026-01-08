@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #3498db;      /* Красивый синий */
+    --secondary-color: #2c3e50;    /* Темно-синий для шапки */
+    --accent-color: #e74c3c;       /* Акцентный красный */
+    --light-color: #ecf0f1;        /* Светлый фон */
+    --dark-color: #34495e;         /* Темный элемент */
+    --success-color: #27ae60;      /* Зеленый для успеха */
+    --warning-color: #f39c12;      /* Оранжевый/желтый */
+}
+
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Упрощенная навигация - убрано изменение цвета при наведении */
+.navbar {
+    background-color: var(--secondary-color) !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: none !important; /* Убираем переходы */
+}
+
+.nav-link:hover {
+    color: white !important; /* Просто становится ярче, без анимации */
+    opacity: 1 !important;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Убираем анимацию с карточек */
+.card {
+    transition: none !important; /* Убираем все анимации */
+    border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+    transform: none !important; /* Убираем поднятие */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important; /* Более скромная тень */
+}
+
+/* Основные цвета кнопок */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: none !important; /* Убираем анимацию */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Более темный синий */
+    border-color: #2980b9;
+    transform: none !important; /* Убираем поднятие */
+    box-shadow: none !important; /* Убираем тень */
+}
+
+/* Заголовок с новым цветом */
+header.bg-light {
+    background-color: var(--light-color) !important;
+}
+
+/* Таблицы */
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.table th {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+/* Футер */
+footer {
+    background-color: var(--secondary-color) !important;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+footer a:hover {
+    color: white !important;
+    opacity: 1;
+}
+
+/* Модальные окна */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Иконки с новыми цветами */
+.bi-check-circle-fill.text-success {
+    color: var(--success-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Убираем анимацию fade-in, если она есть */
+.fade-in {
+    animation: none !important;
+}
+
+/* Упрощенная пагинация */
+.pagination .page-link {
+    color: var(--primary-color);
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Бейджи с акцентным цветом */
+.discount-badge {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Карточки преимуществ с более светлым фоном */
+.card.border-0.shadow-sm {
+    background-color: white;
+    border: 1px solid #e8e8e8 !important;
+}
+
+/* Карта */
+#map-container {
+    border: 1px solid #ddd;
+}
+
+/* Адаптивность сохраняем */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+    
+    .navbar-brand span {
+        font-size: 1.1rem;
+    }
+    
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
+
+/* Убираем все ненужные анимации */
+* {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Немного улучшаем читаемость текста */
+p, li {
+    color: #444;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
