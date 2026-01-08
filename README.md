@@ -38,7 +38,6 @@ WebExam/
 ├── index.html                    # Главная
 ├── dashboard.html                # Личный кабинет
 ├── README.md                     # Описание
-│
 └── static/
     ├── css/
     │   └── styles.css           # Все стили тут
